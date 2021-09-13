@@ -1,0 +1,88 @@
+@import url('./switch.less');
+.vc-lane {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .add-area {
+        margin-top: 10px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .name {
+            width: 60%;
+            height: 30px;
+            outline-style: none;
+            border: 1px solid #ccc;
+            padding: 0px 5px;
+            font-size: 14px;
+            color: #4e5969;
+            border-radius: 3px;
+            &::placeholder {
+                font-size: 14px;
+                color: #ccc;
+                text-align: left;
+            }
+            &:focus {
+                border-color: #2196f3;
+                box-shadow: 0 0 3px #2196f3;
+            }
+        }
+        button {
+            margin-left: 10px;
+            height: 32px;
+            border: 0;
+            background-color: #2196f3;
+            border-radius: 3px;
+            color: #fff;
+        }
+    }
+    .list {
+        width: 90%;
+        margin-top: 30px;
+        max-height: 400px;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            .name {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                direction: rtl;
+                margin-right: 10px;
+            }
+            .action {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .deleteBtn {
+                    width: 50px;
+                    height: 24px;
+                    margin-right: 10px;
+                    border: none;
+                    background-color: red;
+                    color: #fff;
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+    .empty {
+        width: 90%;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 24px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+    }
+}

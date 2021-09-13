@@ -1,0 +1,28 @@
+<div class="vc-lane">
+    <div class="add-area">
+        <input class="name" placeholder="请输入泳道id" />
+        <button class="addBtn">新增泳道标识</button>
+    </div>
+    {{if (data.length > 0)}}
+        <div class="list">
+            {{for (var i = 0; i < data.length; i++)}}
+                <div class="item">
+                    <span class="name">{{data[i].laneId}}</span>
+                    <div class="action">
+                        <button class="deleteBtn" data-index="{{i}}">删除</button>
+                        <label class="switch" data-index="{{i}}">
+                            {{if (data[i].isOpen)}}
+                                <input type="checkbox" checked />
+                            {{else}}
+                                <input type="checkbox" />
+                            {{/if}}
+                            <span class="slider round" data-index="{{i}}">{{data[i].isOpen ? '开' : '关'}}</span>
+                        </label>
+                    </div>
+                </div>
+            {{/for}}
+        </div>
+    {{else}}
+        <div class="empty">暂未设置泳道信息</div>
+    {{/if}}
+</div>

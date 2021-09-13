@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vconsole 泳道插件</title>
+    <script src="https://cdn.bootcss.com/vConsole/3.2.2/vconsole.min.js"></script>
+</head>
+
+<body>
+    <script>
+        const vConsole = new VConsole();
+        const plugin = new VConsoleLanePlugin(vConsole);
+        vConsole.setOption({
+            onReady: function() {
+                vConsole.show()
+                vConsole.showTab("lane");
+            }
+        })
+    </script>
+</body>
+
+</html>
