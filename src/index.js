@@ -1,7 +1,7 @@
 /**
  * vConsole-resouces Plugin
  *
- * @author WechatFE
+ * @author fe-toplion
  */
 import tplSource from "./template.html";
 import "./style.less";
@@ -10,7 +10,6 @@ class VConsoleLanePlugin {
     constructor(vConsole) {
         this.vConsole = vConsole;
         this.$ = vConsole.$;
-        this.dom = null;
         this.data = this.getData();
         return this.init();
     }
@@ -45,7 +44,7 @@ class VConsoleLanePlugin {
                 const index = e.target.dataset.index;
                 this.data[index].isOpen = !this.data[index].isOpen;
                 vConsole.tool.setStorage("laneList", JSON.stringify(this.data));
-                e.target.innerHTML = this.data[index].isOpen ? '开' : '关';
+                e.target.innerHTML = this.data[index].isOpen ? "开" : "关";
                 this.setCookie();
             });
         });
@@ -56,19 +55,6 @@ class VConsoleLanePlugin {
             this.setCookie();
         });
 
-        vConsoleLane.on("addTool", (callback) => {
-            const buttons = [
-                {
-                    name: "Show Lane",
-                    onClick: this.show,
-                },
-                {
-                    name: "Close Lane",
-                    onClick: this.close,
-                },
-            ];
-            callback(buttons);
-        });
         this.vConsole.addPlugin(vConsoleLane);
         return vConsoleLane;
     }
@@ -83,7 +69,7 @@ class VConsoleLanePlugin {
 
     renderDom() {
         const html = this.$.render(tplSource, { data: this.data });
-        vConsole.$.one('.vc-lane').innerHTML = html.innerHTML;
+        vConsole.$.one(".vc-lane").innerHTML = html.innerHTML;
         this.setCookie();
     }
     setCookie() {
@@ -101,44 +87,11 @@ class VConsoleLanePlugin {
             );
         }
         const exp = new Date();
-        exp.setTime(exp.getTime() + (laneList.length ? 10 * 24 * 3600 * 1000 : 0));
+        exp.setTime(
+            exp.getTime() + (laneList.length ? 10 * 24 * 3600 * 1000 : 0)
+        );
         document.cookie = `${name}=${value};expires=${exp.toGMTString()};path=/`;
     }
-
-    // show = () => {
-    //     if (!this.stats) {
-    //         this.stats = new Stats();
-    //         this.stats.showPanel(1); // 0: fps, 1: ms, 2: mb, 3+: custom
-    //         this.dom = this.stats.dom;
-    //         document.body.appendChild(this.dom);
-    //         this.requestID = requestAnimationFrame(this.loop);
-    //     }
-    // };
-
-    // changePanel = (type) => {
-    //     if (!this.stats) {
-    //         this.show();
-    //     }
-    //     this.stats.setMode(Number(type));
-    // };
-
-    // loop = () => {
-    //     this.stats.update();
-    //     this.requestID = requestAnimationFrame(this.loop);
-    // };
-
-    // close = () => {
-    //     if (this.requestID) {
-    //         cancelAnimationFrame(this.requestID);
-    //     }
-    //     if (this.dom) {
-    //         document.body.removeChild(this.dom);
-    //     }
-
-    //     this.stats = null;
-    //     this.requestID = null;
-    //     this.dom = null;
-    // };
 }
 
 window.VConsoleLanePlugin = VConsoleLanePlugin;
