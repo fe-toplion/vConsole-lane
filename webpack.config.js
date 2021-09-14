@@ -10,8 +10,8 @@ module.exports = {
     output: {
         path: path.join(__dirname, "./dist"),
         filename: "vconsole-lane-plugin.min.js",
-        // library: "vconsole-lane-plugin",
-        // libraryTarget: "umd",
+        library: "vconsole-lane-plugin",
+        libraryTarget: "umd",
         umdNamedDefine: true,
     },
     devServer: {
