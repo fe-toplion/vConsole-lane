@@ -1,6 +1,7 @@
 {
   "name": "vconsole-lane-plugin",
   "version": "1.0.0",
+  "private": false,
   "description": "泳道设置插件",
   "main": "dist/vconsole-lane-plugin.min.js",
   "scripts": {
