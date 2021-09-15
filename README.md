@@ -9,12 +9,12 @@
 
 1. 安装
 ```
-npm i --save-dev vConsole-lane-plugin
+npm i --save-dev vconsole-lane-plugin
 ```
 2. 初始化
 ```
 import VConsole from 'vconsole';
-import VConsoleLanePlugin from 'vConsole-lane-plugin';
+import VConsoleLanePlugin from 'vconsole-lane-plugin';
 const vConsole = new VConsole();
 const plugin = new VConsoleLanePlugin(vConsole);
 ```
