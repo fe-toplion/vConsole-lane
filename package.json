@@ -2,7 +2,7 @@
   "name": "vconsole-lane",
   "version": "1.0.0",
   "description": "泳道设置插件",
-  "main": "index.js",
+  "main": "dist/vconsole-lane-plugin",
   "scripts": {
     "build": "webpack",
     "serve": "webpack-dev-server"
@@ -11,6 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/fe-toplion/vConsole-lane.git"
   },
+  "files": ["dist"],
   "keywords": [
     "vconsole"
   ],
