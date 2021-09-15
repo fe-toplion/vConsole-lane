@@ -55,6 +55,16 @@ class VConsoleLanePlugin {
             this.setCookie();
         });
 
+        vConsoleLane.on("addTool", (callback) => {
+            const buttons = [
+                {
+                    name: "refresh",
+                    onClick: this.refresh,
+                }
+            ];
+            callback(buttons);
+        });
+
         this.vConsole.addPlugin(vConsoleLane);
         return vConsoleLane;
     }
@@ -91,6 +101,9 @@ class VConsoleLanePlugin {
             exp.getTime() + (laneList.length ? 10 * 24 * 3600 * 1000 : 0)
         );
         document.cookie = `${name}=${value};expires=${exp.toGMTString()};path=/`;
+    }
+    refresh() {
+        location.reload(true);
     }
 }
 
