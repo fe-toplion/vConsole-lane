@@ -12,7 +12,8 @@ module.exports = {
         filename: "vconsole-lane-plugin.min.js",
         library: "vconsole-lane-plugin",
         libraryTarget: "umd",
-        umdNamedDefine: true,
+        globalObject: 'this'
+        // umdNamedDefine: true,
     },
     devServer: {
         host: "0.0.0.0",
