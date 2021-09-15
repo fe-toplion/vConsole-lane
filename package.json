@@ -11,7 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/fe-toplion/vConsole-lane.git"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "vconsole"
   ],
