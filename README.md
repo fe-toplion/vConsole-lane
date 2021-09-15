@@ -4,7 +4,6 @@
 主要用于解决测试环境中反复切换泳道的问题，只要引入vconsole，就可以利用该插件管理泳道信息，方便快捷
 
 
-
 # 使用
 **方法一： npm包**
 
@@ -31,4 +30,6 @@ const plugin = new VConsoleLanePlugin(vConsole);
 ```
 
 # 效果
+线上地址预览：https://fe-toplion.github.io/vConsole-lane-plugin/dist/index.html
+
 <img src="./public/cover.png" width = "375" height = "667" alt="图片名称" align="center" />
