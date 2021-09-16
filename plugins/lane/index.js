@@ -60,7 +60,7 @@ class VConsoleLanePlugin {
                 {
                     name: "refresh",
                     onClick: this.refresh,
-                }
+                },
             ];
             callback(buttons);
         });
@@ -106,6 +106,5 @@ class VConsoleLanePlugin {
         location.reload(true);
     }
 }
-
 window.VConsoleLanePlugin = VConsoleLanePlugin;
 export default VConsoleLanePlugin;

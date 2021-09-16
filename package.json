@@ -1,9 +1,9 @@
 {
-  "name": "vconsole-lane-plugin",
+  "name": "vconsole-plugin-tools",
   "version": "1.0.0",
   "private": false,
   "description": "泳道设置插件",
-  "main": "dist/vconsole-lane-plugin.min.js",
+  "main": "dist/vconsole-plugin-tools.min.js",
   "scripts": {
     "build": "webpack",
     "serve": "webpack-dev-server"
