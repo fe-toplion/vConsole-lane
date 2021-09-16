@@ -24,6 +24,7 @@
 npm i --save-dev vconsole-plugin-tools
 ```
 2. 初始化
+
 该工具集包含多个插件，支持所有插件都初始化，也支持想要的某些插件
 ```
 import VConsole from 'vconsole';
