@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fe-toplion/vConsole-lane.git"
+    "url": "git+https://github.com/fe-toplion/vconsole-plugin-tools.git"
   },
   "files": [
     "dist"
@@ -21,13 +21,14 @@
   "author": "fe-toplion",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fe-toplion/vConsole-lane/issues"
+    "url": "https://github.com/fe-toplion/vconsole-plugin-tools/issues"
   },
-  "homepage": "https://github.com/fe-toplion/vConsole-lane#readme",
+  "homepage": "https://github.com/fe-toplion/vconsole-plugin-tools#readme",
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
     "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.2.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
