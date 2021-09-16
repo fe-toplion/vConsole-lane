@@ -6,7 +6,8 @@
 线上地址预览：<a href="https://fe-toplion.github.io/vconsole-plugin-tools/dist/index.html">https://fe-toplion.github.io/vconsole-plugin-tools/dist/index.html</a>
 
 # 插件工具集列表
-1. VConsoleLanePlugin
+**1. VConsoleLanePlugin**
+
 泳道插件主要用于解决泳道标识信息的新建、删除和切换，能够根据域名自动匹配，智能管理
 
 **效果**
