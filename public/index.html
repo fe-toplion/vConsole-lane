@@ -7,12 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vconsole 泳道插件</title>
     <script src="https://cdn.bootcss.com/vConsole/3.2.2/vconsole.min.js"></script>
+    
+    <script>
+        // console.log(VConsole)
+    </script>
 </head>
 
 <body>
     <script>
-        const vConsole = new VConsole();
-        const plugin = new VConsoleLanePlugin(vConsole);
+        var vConsole = new VConsole();
+        const plugin = new VConsolePluginTools(vConsole);
         vConsole.setOption({
             onReady: function() {
                 vConsole.show()

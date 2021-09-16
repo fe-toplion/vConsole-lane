@@ -5,12 +5,12 @@ const TerserPlugin = require("terser-webpack-plugin");
 module.exports = {
     mode: "development",
     entry: {
-        "vconsole-lane-plugin": "./src/index.js",
+        "vconsole-plugins": "./plugins/app.js",
     },
     output: {
         path: path.join(__dirname, "./dist"),
-        filename: "vconsole-lane-plugin.min.js",
-        library: "vconsole-lane-plugin",
+        filename: "vconsole-plugin-tools.min.js",
+        library: "vconsole-plugin-tools",
         libraryTarget: "umd",
         globalObject: 'this'
         // umdNamedDefine: true,
