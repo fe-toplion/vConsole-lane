@@ -3,7 +3,7 @@
 
 基于vconsole开发一些插件工具集，用于解决公司特有场景问题。工具集实际是多个vconsole插件组成的集合，放在一起方便管理和维护。
 
-线上地址预览：<a href="https://fe-toplion.github.io/vconsole-plugin-tools/dist/index.html">https://fe-toplion.github.io/vconsole-plugin-tools/dist/index.html</a>
+线上地址预览：<a href="https://fe-toplion.github.io/vconsole-plugin-tools/dist/index.html" target="_blank">https://fe-toplion.github.io/vconsole-plugin-tools/dist/index.html</a>
 
 # 插件工具集列表
 **1. VConsoleLanePlugin**
